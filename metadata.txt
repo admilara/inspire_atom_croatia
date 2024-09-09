@@ -1,0 +1,8 @@
+[general]
+
+name = CRO INSPIRE ATOM FEED
+description = Plugin za dodavanje katastarskih čestica prema podatcima hrvatskog INSPIRE ATOM feeda.
+version=1.0
+qgisMinimumVersion=3.0
+author = Lara Buljan
+email = lara.buljan@outlook.com
