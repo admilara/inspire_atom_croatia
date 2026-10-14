@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <!-- Cadastral parcels with a download arrow. Original artwork for this plugin. -->
+  <rect x="2" y="2" width="60" height="60" rx="10" fill="#1d5c8f"/>
+  <g fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round">
+    <path d="M9 13 L33 9 L36 26 L11 31 Z" fill="#3f86c0"/>
+    <path d="M33 9 L55 12 L54 24 L36 26" fill="#5fa3d6"/>
+    <path d="M11 31 L36 26 L38 41 L13 47 Z" fill="#5fa3d6"/>
+  </g>
+  <circle cx="47" cy="45" r="13" fill="#e8a33d" stroke="#ffffff" stroke-width="2.5"/>
+  <path d="M47 37 V51 M41 46 L47 52 L53 46" fill="none" stroke="#ffffff" stroke-width="3.5"
+        stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

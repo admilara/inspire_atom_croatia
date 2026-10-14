@@ -1,8 +1,42 @@
 [general]
+name=INSPIRE ATOM Croatia - Cadastral Parcels
+qgisMinimumVersion=3.22
+qgisMaximumVersion=4.99
+description=Download cadastral parcels of Croatian cadastral municipalities from the INSPIRE ATOM feed of the State Geodetic Administration (DGU) and add them to QGIS.
+about=Browse the national INSPIRE ATOM download feed of the Croatian State Geodetic Administration (Državna geodetska uprava, DGU), pick a cadastral municipality (katastarska općina), download its GML data and add the layers you need to the project in one step.
 
-name = CRO INSPIRE ATOM FEED
-description = Plugin za dodavanje katastarskih čestica prema podatcima hrvatskog INSPIRE ATOM feeda.
-version=1.0
-qgisMinimumVersion=3.0
-author = Lara Buljan
-email = lara.buljan@outlook.com
+    Features:
+    - search by municipality name or ID, with or without Croatian diacritics
+    - sorting by the Croatian alphabet (č, ć, dž, đ, lj, nj, š, ž)
+    - downloads run in the background with progress, using the QGIS proxy and network settings
+    - downloaded data is kept per municipality and reused, with a button to clear what the current project does not use
+    - English and Croatian user interface
+
+    Hrvatski: dodatak za preuzimanje katastarskih čestica po katastarskim općinama iz INSPIRE ATOM servisa Državne geodetske uprave.
+version=2.0.0
+author=Lara Buljan
+email=lara.buljan@outlook.com
+
+changelog=2.0.0
+    - Search by name or ID, diacritics optional
+    - Correct Croatian alphabetical sorting
+    - Downloads kept in one folder per municipality and reused; zip archives deleted after extraction; "Clear unused downloads" button
+    - Background downloads with progress bar using QGIS network settings (proxy, SSL)
+    - Layers added into a group named after the municipality; GML files with several feature types load as several layers
+    - Works on Linux and macOS (path handling); prepared for QGIS 4 / Qt6
+    - Croatian translation of the user interface
+    - Fixed: file list kept growing when switching municipalities; crash on feed entries without CRS information
+    1.0
+    - First version, used internally
+
+tags=inspire,atom,download,croatia,hrvatska,cadastre,katastar,cadastral parcels,katastarske čestice,DGU,GML
+
+homepage=https://github.com/admilara/inspire_atom_croatia
+tracker=https://github.com/admilara/inspire_atom_croatia/issues
+repository=https://github.com/admilara/inspire_atom_croatia
+category=Web
+icon=icon.png
+experimental=False
+deprecated=False
+server=False
+hasProcessingProvider=no

@@ -1,26 +1,17 @@
-"""
-/***************************************************************************
- HR INSPIRE ATOM FEED
-                                 A QGIS plugin
- Client for INSPIRE Downloadservices based on the croatian ATOM-Feed
-                             -------------------
-        begin                : September, 2024
-        copyright            : (C) 2024 by Lara Buljan
-        email                : lara.buljan@outlook.com
- ***************************************************************************/
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+# INSPIRE ATOM Croatia – Cadastral Parcels
+# QGIS plugin for downloading cadastral data from the Croatian INSPIRE ATOM feed.
+#
+# Copyright (C) 2024-2026 Lara Buljan <lara.buljan@outlook.com>
+#
+# This program is free software: you can redistribute it and/or modify it under
+# the terms of the GNU General Public License as published by the Free Software
+# Foundation, either version 3 of the License, or (at your option) any later
+# version. See the LICENSE file for details.
 
-/***************************************************************************
- *                                                                         *
- *   This program is free software; you can redistribute it and/or modify  *
- *   it under the terms of the GNU General Public License as published by  *
- *   the Free Software Foundation; either version 2 of the License, or     *
- *   (at your option) any later version.                                   *
- *                                                                         *
- ***************************************************************************/
- This script initializes the plugin, making it known to QGIS.
-"""
 
-import os
-def classFactory(iface):
-    from .croatomfeed import CroAtomFeed
-    return CroAtomFeed(iface)
+def classFactory(iface):  # noqa: N802 (name required by QGIS)
+    from .plugin import InspireAtomCroatiaPlugin
+
+    return InspireAtomCroatiaPlugin(iface)
