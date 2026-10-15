@@ -83,12 +83,16 @@ before using or redistributing the data. The plugin is not affiliated with or en
 
 ## Development
 
-The parts that do not depend on QGIS (feed parsing, sorting, search and download folder handling)
-have unit tests:
+The parts that do not need a running QGIS (feed parsing, sorting, search and download folder
+handling) have unit tests. The feed parser uses Qt, so run them with the Python that comes with
+QGIS (on Windows, from the OSGeo4W Shell):
 
 ```bash
 python -m pytest tests
 ```
+
+The feed is parsed with Qt's `QXmlStreamReader`, and documents containing a DTD are rejected, which
+rules out XML entity attacks without depending on extra packages such as `defusedxml`.
 
 **Translations** – after changing user-visible text, update and compile the Croatian translation
 (needs the PyQt5 and Qt Linguist tools):

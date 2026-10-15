@@ -78,6 +78,7 @@ def parse_iso(value):
 
 def layer_file_path(layer):
     """File path behind a layer, without OGR's '|layername=...' suffix."""
+    # decodeUri() returns an empty dict for providers it cannot decode.
     decoded = QgsProviderRegistry.instance().decodeUri(layer.providerType(), layer.source())
     return decoded.get("path") or layer.source().split("|")[0]
 
@@ -322,13 +323,12 @@ class InspireAtomDialog(QDialog, FORM_CLASS):
     # --------------------------------------------------------------- download
 
     def paths_in_use(self):
-        paths = []
-        for layer in QgsProject.instance().mapLayers().values():
-            try:
-                paths.append(layer_file_path(layer))
-            except Exception:  # layers of exotic providers; they cannot be in our cache
-                continue
-        return paths
+        """File paths behind all layers in the current project.
+
+        For non-file layers (WMS, PostGIS, memory, ...) this yields a URI or
+        connection string, which simply never matches a cache folder.
+        """
+        return [layer_file_path(layer) for layer in QgsProject.instance().mapLayers().values()]
 
     def on_download_clicked(self):
         entry = self.selected

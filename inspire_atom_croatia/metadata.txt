@@ -25,6 +25,7 @@ changelog=2.0.0
     - Layers added into a group named after the municipality; GML files with several feature types load as several layers
     - Works on Linux and macOS (path handling); prepared for QGIS 4 / Qt6
     - Croatian translation of the user interface
+    - Feed parsed with Qt's XML reader; documents containing a DTD are rejected (protection against XML entity attacks)
     - Fixed: file list kept growing when switching municipalities; crash on feed entries without CRS information
     1.0
     - First version, used internally

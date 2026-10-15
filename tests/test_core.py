@@ -1,5 +1,9 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
-"""Unit tests for the QGIS-independent modules. Run with: python -m pytest tests"""
+"""Unit tests for the parts of the plugin that do not need a running QGIS.
+
+atom_feed imports Qt through qgis.PyQt, so run them with the Python that comes
+with QGIS (on Windows: the OSGeo4W Shell):  python -m pytest tests
+"""
 
 import os
 import sys
@@ -55,10 +59,46 @@ def test_id_from_href():
     assert municipality_id_from_href("https://x/atom/something.zip") == ""
 
 
-@pytest.mark.parametrize("content", [b"not xml", b"<html><body/></html>"])
+@pytest.mark.parametrize("content", [b"", b"not xml", b"<html><body/></html>",
+                                     b'<feed xmlns="http://www.w3.org/2005/Atom"><entry>'])
 def test_rejects_non_feed(content):
     with pytest.raises(FeedError):
         parse_feed(content)
+
+
+BILLION_LAUGHS = b"""<?xml version="1.0"?>
+<!DOCTYPE feed [
+  <!ENTITY lol "lol">
+  <!ENTITY lol2 "&lol;&lol;&lol;&lol;&lol;&lol;&lol;&lol;&lol;&lol;">
+  <!ENTITY lol3 "&lol2;&lol2;&lol2;&lol2;&lol2;&lol2;&lol2;&lol2;&lol2;&lol2;">
+]>
+<feed xmlns="http://www.w3.org/2005/Atom"><entry><title>&lol3;</title>
+<link href="https://example.invalid/ko-1.zip"/></entry></feed>"""
+
+EXTERNAL_ENTITY = b"""<?xml version="1.0"?>
+<!DOCTYPE feed [<!ENTITY secret SYSTEM "file:///etc/passwd">]>
+<feed xmlns="http://www.w3.org/2005/Atom"><entry><title>&secret;</title>
+<link href="https://example.invalid/ko-1.zip"/></entry></feed>"""
+
+
+@pytest.mark.parametrize("content", [BILLION_LAUGHS, EXTERNAL_ENTITY])
+def test_rejects_documents_with_dtd(content):
+    with pytest.raises(FeedError, match="DTD"):
+        parse_feed(content)
+
+
+def test_ignores_foreign_namespaces_and_nested_elements():
+    content = b"""<feed xmlns="http://www.w3.org/2005/Atom" xmlns:x="urn:x">
+      <author><name>DGU</name></author>
+      <entry>
+        <x:title>wrong title</x:title>
+        <title>Cadastral municipality TEST</title>
+        <x:extra><link href="https://example.invalid/nested-ko-9.zip"/></x:extra>
+        <link href="https://example.invalid/ko-7.zip"/>
+      </entry>
+    </feed>"""
+    (entry,) = parse_feed(content)
+    assert (entry.name, entry.municipality_id) == ("TEST", "7")
 
 
 # --- Croatian sorting -------------------------------------------------------
