@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Test fixture. Structure mirrors the live DGU feed (October 2026). Entries with IDs 3xxxxx are real;
+     IDs 4000xx and the last two entries are synthetic, added to test sorting and malformed entries. -->
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:georss="http://www.georss.org/georss" xml:lang="en">
+  <title>Digital cadastre plan</title>
+  <link href="https://oss.uredjenazemlja.hr/oss/public/atom/atom_feed.xml" rel="self"/>
+  <id>https://oss.uredjenazemlja.hr/oss/public/atom/atom_feed.xml</id>
+  <updated>2026-10-12T00:00:00Z</updated>
+  <entry>
+    <title>Cadastral municipality ČITLUK</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-305570.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-305570.zip</id>
+    <updated>2026-10-11T23:00:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality ČOVAC</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-317721.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-317721.zip</id>
+    <updated>2026-10-11T23:01:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality NEGOVEC</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-333123.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-333123.zip</id>
+    <updated>2026-10-11T23:02:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality BRAČEVIĆ</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-329436.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-329436.zip</id>
+    <updated>2026-10-11T23:03:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality BRAJAKOVO BRDO</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-307483.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-307483.zip</id>
+    <updated>2026-10-11T23:04:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality BRČEVEC</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-336513.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-336513.zip</id>
+    <updated>2026-10-11T23:05:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality BRDO</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-301779.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-301779.zip</id>
+    <updated>2026-10-11T23:06:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality BRĐANI</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-326089.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-326089.zip</id>
+    <updated>2026-10-11T23:07:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality BRĐANI</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-317675.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-317675.zip</id>
+    <updated>2026-10-11T23:08:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality BREGI</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-319830.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-319830.zip</id>
+    <updated>2026-10-11T23:09:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality ĐURĐIC</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-303836.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-303836.zip</id>
+    <updated>2026-10-11T23:10:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality ĐURĐIC</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-315397.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-315397.zip</id>
+    <updated>2026-10-11T23:11:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality ĐURIČIĆ</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-323209.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-323209.zip</id>
+    <updated>2026-10-11T23:12:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality ERDELJ</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-307548.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-307548.zip</id>
+    <updated>2026-10-11T23:13:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality FUŽINE</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-304565.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-304565.zip</id>
+    <updated>2026-10-11T23:14:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality GAĆIŠTE</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-332496.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-332496.zip</id>
+    <updated>2026-10-11T23:15:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality GOMIRSKO VRBOVSKO</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-333379.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-333379.zip</id>
+    <updated>2026-10-11T23:16:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality BREZNICA NAŠIČKA</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-317241.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-317241.zip</id>
+    <updated>2026-10-11T23:17:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality BUŠETINA</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-332453.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-332453.zip</id>
+    <updated>2026-10-11T23:18:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality BUZET</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-302066.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-302066.zip</id>
+    <updated>2026-10-11T23:19:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality CAREVDAR</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-315311.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-315311.zip</id>
+    <updated>2026-10-11T23:20:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality CERNIK-ČAVLE</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-324493.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-324493.zip</id>
+    <updated>2026-10-11T23:21:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality CIGLENA</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-300985.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-300985.zip</id>
+    <updated>2026-10-11T23:22:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality CRNI LUG</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-304522.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-304522.zip</id>
+    <updated>2026-10-11T23:23:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality ČABAR</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-302694.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-302694.zip</id>
+    <updated>2026-10-11T23:24:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality ČAĐAVICA</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-323128.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-323128.zip</id>
+    <updated>2026-10-11T23:25:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality ČAGLIĆ</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-321702.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-321702.zip</id>
+    <updated>2026-10-11T23:26:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality ČAKOVEC</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-302813.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-302813.zip</id>
+    <updated>2026-10-11T23:27:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality BRIBIR</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-329916.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-329916.zip</id>
+    <updated>2026-10-11T23:28:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality BRIBIR</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-302589.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-302589.zip</id>
+    <updated>2026-10-11T23:29:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality LIČKO CERJE</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-311081.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-311081.zip</id>
+    <updated>2026-10-11T23:30:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality DONJI DRAGONOŽEC</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-400001.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-400001.zip</id>
+    <updated>2026-10-11T23:31:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality DUBRAVA</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-400002.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-400002.zip</id>
+    <updated>2026-10-11T23:32:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality LJUBEŠĆICA</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-400003.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-400003.zip</id>
+    <updated>2026-10-11T23:33:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality NJIVICE</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-400004.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-400004.zip</id>
+    <updated>2026-10-11T23:34:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality ŠIBENIK</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-400005.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-400005.zip</id>
+    <updated>2026-10-11T23:35:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality ŽUPANJA</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-400006.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-400006.zip</id>
+    <updated>2026-10-11T23:36:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality ZADAR</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-400007.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-400007.zip</id>
+    <updated>2026-10-11T23:37:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality SVETI ĐURĐ</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-400008.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-400008.zip</id>
+    <updated>2026-10-11T23:38:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality ĆUNSKI</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-400009.zip" rel="alternate" type="application/x-gmz;charset=utf-8;version=3.2.1" hreflang="hr" title=""/>
+    <id>https://oss.uredjenazemlja.hr/oss/public/atom/ko-400009.zip</id>
+    <updated>2026-10-11T23:39:00Z</updated>
+    <georss:polygon>45.0 15.0 45.1 15.0 45.1 15.1 45.0 15.1 45.0 15.0</georss:polygon>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality BEZ ZIPA</title>
+    <link href="https://example.invalid/readme.html" rel="describedby"/>
+    <category term="http://www.opengis.net/def/crs/EPSG/0/3765" label="HTRS96/TM"/>
+  </entry>
+  <entry>
+    <title>Cadastral municipality BEZ KATEGORIJE</title>
+    <link href="https://oss.uredjenazemlja.hr/oss/public/atom/ko-499999.zip" rel="alternate"/>
+  </entry>
+</feed>
