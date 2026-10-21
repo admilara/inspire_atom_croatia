@@ -27,6 +27,19 @@ class CacheError(Exception):
     pass
 
 
+def normalize_dir(path, pathmod=os.path):
+    """Absolute path with the platform's own separators, e.g. on Windows
+
+        'C:/Users/x/QGIS3/profiles/default/cache\\inspire_atom_croatia'
+        -> 'C:\\Users\\x\\QGIS3\\profiles\\default\\cache\\inspire_atom_croatia'
+
+    Qt hands out paths with forward slashes on every platform, while os.path.join
+    adds backslashes on Windows, so paths built from both end up mixed.
+    pathmod exists so the tests can check Windows behaviour (ntpath) on any OS.
+    """
+    return pathmod.normpath(pathmod.abspath(pathmod.expanduser(path)))
+
+
 def municipality_dir(root, municipality_id):
     return os.path.join(root, f"{FOLDER_PREFIX}{municipality_id}")
 

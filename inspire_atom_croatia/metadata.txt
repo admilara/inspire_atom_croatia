@@ -13,11 +13,13 @@ about=Browse the national INSPIRE ATOM download feed of the Croatian State Geode
     - English and Croatian user interface
 
     Hrvatski: dodatak za preuzimanje katastarskih čestica po katastarskim općinama iz INSPIRE ATOM servisa Državne geodetske uprave.
-version=2.0.0
+version=2.0.1
 author=Lara Buljan
 email=lara.buljan@outlook.com
 
-changelog=2.0.0
+changelog=2.0.1
+    - Fixed: download folder path mixed / and \ separators on Windows; paths are now normalised, including folders saved by 2.0.0
+    2.0.0
     - Search by name or ID, diacritics optional
     - Correct Croatian alphabetical sorting
     - Downloads kept in one folder per municipality and reused; zip archives deleted after extraction; "Clear unused downloads" button

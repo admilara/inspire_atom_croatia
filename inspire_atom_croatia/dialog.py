@@ -59,7 +59,9 @@ UNCHECKED = Qt.CheckState.Unchecked
 
 
 def default_cache_dir():
-    return os.path.join(QgsApplication.qgisSettingsDirPath(), "cache", "inspire_atom_croatia")
+    # qgisSettingsDirPath() uses forward slashes even on Windows; normalise the result.
+    return cache.normalize_dir(
+        os.path.join(QgsApplication.qgisSettingsDirPath(), "cache", "inspire_atom_croatia"))
 
 
 def human_size(num_bytes):
@@ -142,11 +144,13 @@ class InspireAtomDialog(QDialog, FORM_CLASS):
         return self.settings.value(SETTINGS_PREFIX + key, default, type=str) or default
 
     def cache_dir(self):
-        return self._setting("cache_dir", default_cache_dir())
+        # Also normalises folders saved by earlier versions (QFileDialog returns '/' on Windows).
+        return cache.normalize_dir(self._setting("cache_dir", default_cache_dir()))
 
     def choose_cache_dir(self):
         folder = QFileDialog.getExistingDirectory(self, self.tr("Choose download folder"), self.cache_dir())
         if folder:
+            folder = cache.normalize_dir(folder)
             self.settings.setValue(SETTINGS_PREFIX + "cache_dir", folder)
             self.cacheDirEdit.setText(folder)
             self.show_selection(self.selected)

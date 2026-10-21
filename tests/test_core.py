@@ -5,7 +5,9 @@ atom_feed imports Qt through qgis.PyQt, so run them with the Python that comes
 with QGIS (on Windows: the OSGeo4W Shell):  python -m pytest tests
 """
 
+import ntpath
 import os
+import posixpath
 import sys
 import zipfile
 
@@ -212,3 +214,20 @@ def test_clear_unused_keeps_folders_in_use(tmp_path):
 
     assert (removed, freed, failed) == (2, 20, [])
     assert sorted(os.listdir(root)) == ["ko-2", "unrelated"]
+
+
+@pytest.mark.parametrize("raw, expected", [
+    # what QgsApplication.qgisSettingsDirPath() + os.path.join produce on Windows
+    ("C:/Users/x/AppData/Roaming/QGIS/QGIS3/profiles/default/cache\\inspire_atom_croatia",
+     "C:\\Users\\x\\AppData\\Roaming\\QGIS\\QGIS3\\profiles\\default\\cache\\inspire_atom_croatia"),
+    # what QFileDialog returns on Windows, trailing slash included
+    ("D:/Projekti/katastar/", "D:\\Projekti\\katastar"),
+    # network share
+    ("//server/share/katastar", "\\\\server\\share\\katastar"),
+])
+def test_normalize_dir_windows(raw, expected):
+    assert cache.normalize_dir(raw, pathmod=ntpath) == expected
+
+
+def test_normalize_dir_posix():
+    assert cache.normalize_dir("/home/x/.local/share/QGIS//cache/./a/", pathmod=posixpath) == "/home/x/.local/share/QGIS/cache/a"
