@@ -83,33 +83,6 @@ before using or redistributing the data. The plugin is not affiliated with or en
 
 ## Development
 
-The parts that do not need a running QGIS (feed parsing, sorting, search and download folder
-handling) have unit tests. The feed parser uses Qt, so run them with the Python that comes with
-QGIS (on Windows, from the OSGeo4W Shell):
-
-```bash
-python -m pytest tests
-```
-
-The feed is parsed with Qt's `QXmlStreamReader`, and documents containing a DTD are rejected, which
-rules out XML entity attacks without depending on extra packages such as `defusedxml`.
-
-**Translations** – after changing user-visible text, update and compile the Croatian translation
-(needs the PyQt5 and Qt Linguist tools):
-
-```bash
-cd inspire_atom_croatia
-pylupdate5 -noobsolete plugin.py dialog.py dialog.ui -ts i18n/inspire_atom_croatia_hr.ts
-# translate the new entries in Qt Linguist, then:
-lrelease i18n/inspire_atom_croatia_hr.ts
-```
-
-**Packaging** – build the zip for plugins.qgis.org:
-
-```bash
-python scripts/package.py      # -> dist/inspire_atom_croatia-<version>.zip
-```
-
 Bug reports and suggestions are welcome in the
 [issue tracker](https://github.com/admilara/inspire_atom_croatia/issues).
 
